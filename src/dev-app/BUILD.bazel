@@ -68,6 +68,8 @@ ng_module(
         "//src/dev-app/mdc-table",
         "//src/dev-app/mdc-tabs",
         "//src/dev-app/mdc-tooltip",
+        "//src/dev-app/mdc-top-app-bar",
+        "//src/dev-app/mdc-top-app-bar-example",
         "//src/dev-app/menu",
         "//src/dev-app/menubar",
         "//src/dev-app/paginator",

@@ -1,0 +1,25 @@
+load("@io_bazel_rules_sass//:defs.bzl", "sass_binary")
+load("//tools:defaults.bzl", "ng_module")
+
+package(default_visibility = ["//visibility:public"])
+
+ng_module(
+    name = "mdc-top-app-bar-example",
+    srcs = glob(["**/*.ts"]),
+    assets = [
+        "mdc-top-app-bar-demo.html",
+        ":mdc_top_app_bar_demo_scss",
+    ],
+    deps = [
+        "//src/cdk/coercion",
+        "//src/material/icon",
+        "//src/material-experimental/mdc-button",
+        "//src/material-experimental/mdc-top-app-bar",
+        "@npm//@angular/router",
+    ],
+)
+
+sass_binary(
+    name = "mdc_top_app_bar_demo_scss",
+    src = "mdc-top-app-bar-demo.scss",
+)

@@ -45,6 +45,7 @@ entryPoints = [
     "mdc-tabs/testing",
     "mdc-tooltip",
     "mdc-tooltip/testing",
+    "mdc-top-app-bar",
     "menubar",
     "popover-edit",
     "selection",

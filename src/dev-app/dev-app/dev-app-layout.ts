@@ -103,6 +103,7 @@ export class DevAppLayout {
     {name: 'MDC Slider', route: '/mdc-slider'},
     {name: 'MDC Snack Bar', route: '/mdc-snack-bar'},
     {name: 'MDC Table', route: '/mdc-table'},
+    {name: 'MDC Top App Bar', route: '/mdc-top-app-bar'},
   ];
 
   /** Currently selected density scale based on the index. */

@@ -14,6 +14,7 @@
 @use '../mdc-tabs/tabs-theme';
 @use '../mdc-table/table-theme';
 @use '../mdc-tooltip/tooltip-theme';
+@use '../mdc-top-app-bar/top-app-bar-theme';
 @use '../mdc-paginator/paginator-theme';
 @use '../mdc-progress-bar/progress-bar-theme';
 @use '../mdc-progress-spinner/progress-spinner-theme';
@@ -48,5 +49,6 @@
     @include input-theme.theme($theme-or-color-config);
     @include tabs-theme.theme($theme-or-color-config);
     @include tooltip-theme.theme($theme-or-color-config);
+    @include top-app-bar-theme.theme($theme-or-color-config);
   }
 }

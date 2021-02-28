@@ -1,0 +1,31 @@
+<iframe class="demo-iframe" #iframe [src]="queryString"></iframe>
+
+<br>
+
+<mat-checkbox (change)="postMessage('dense', $event.checked)">
+    Dense
+</mat-checkbox>
+
+<br>
+
+<mat-checkbox (change)="postMessage('fixed', $event.checked)">
+    Fixed
+</mat-checkbox>
+
+<br>
+
+<mat-checkbox [(ngModel)]="short" (change)="updateShort($event.checked)">
+    Short
+</mat-checkbox>
+
+<br>
+
+<mat-checkbox [(ngModel)]="collapsed" (change)="postMessage('collapsed', $event.checked)" [disabled]="!short">
+    Permanently Collapsed
+</mat-checkbox>
+
+<br>
+
+<mat-checkbox (change)="postMessage('prominent', $event.checked)">
+    Prominent
+</mat-checkbox>

@@ -1,0 +1,34 @@
+@use '../mdc-helpers/mdc-helpers';
+
+@import '@material/top-app-bar/mdc-top-app-bar.import';
+
+.mat-mdc-top-app-bar {
+  // Angular Material supports disabling all animations when NoopAnimationsModule is imported.
+  // TODO(mmalerba): Look into using MDC's Sass queries to separate the animation styles and
+  //  conditionally add them. Consider the size cost when deciding whether to switch.
+  &._mat-animation-noopable {
+    &.mdc-top-app-bar--short {
+      transition: none;
+
+      .mdc-top-app-bar__title {
+        transition: none;
+      }
+    }
+
+    &.mdc-top-app-bar--short-collapsed {
+      transition: none;
+
+      .mdc-top-app-bar__action-item {
+        transition: none;
+      }
+    }
+
+    &.mdc-top-app-bar--fixed {
+      transition: none;
+    }
+
+    &.mdc-top-app-bar--fixed-scrolled {
+      transition: none;
+    }
+  }
+}
